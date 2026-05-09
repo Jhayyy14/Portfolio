@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Jhay D. Peñaloza — Aspiring Software Developer and IT Graduate skilled in Web Development, IoT, and AI-powered applications." />
+  <meta name="keywords" content="Jhay Peñaloza, portfolio, web developer, IT graduate, Laravel, PHP, Arduino, Raspberry Pi, IoT" />
+  <meta name="author" content="Jhay D. Peñaloza" />
+  <meta property="og:title" content="Jhay D. Peñaloza — Portfolio" />
+  <meta property="og:description" content="Aspiring Software Developer specializing in Web, IoT, and AI projects." />
+  <meta property="og:type" content="website" />
+  <title>Jhay D. Peñaloza — Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ===================== NAVIGATION ===================== -->
+  <nav id="navbar" role="navigation" aria-label="Main navigation">
+    <div class="nav-inner">
+      <a href="#hero" class="nav-brand" id="nav-brand">Jhay Peñaloza</a>
+      <ul class="nav-links">
+        <li><a href="#about"      id="nav-about">About</a></li>
+        <li><a href="#skills"     id="nav-skills">Skills</a></li>
+        <li><a href="#experience" id="nav-experience">Experience</a></li>
+        <li><a href="#projects"   id="nav-projects">Projects</a></li>
+        <li><a href="#contact" class="nav-cta" id="nav-contact-btn">Get in Touch</a></li>
+      </ul>
+      <button class="nav-toggle" id="nav-toggle" aria-label="Toggle mobile menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Mobile Nav -->
+  <div class="nav-mobile" id="nav-mobile" aria-hidden="true">
+    <a href="#about"      id="mob-about"      onclick="closeMobileNav()">About</a>
+    <a href="#skills"     id="mob-skills"     onclick="closeMobileNav()">Skills</a>
+    <a href="#experience" id="mob-experience" onclick="closeMobileNav()">Experience</a>
+    <a href="#projects"   id="mob-projects"   onclick="closeMobileNav()">Projects</a>
+    <a href="#contact"    id="mob-contact"    onclick="closeMobileNav()">Get in Touch</a>
+  </div>
+
+  <!-- ===================== HERO ===================== -->
+  <section id="hero" aria-label="Introduction">
+    <div class="container">
+      <div class="hero-inner">
+
+        <!-- Left: Text Content -->
+        <div class="hero-content">
+          <div class="hero-location">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+              <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
+              <circle cx="12" cy="10" r="3"/>
+            </svg>
+            Philippines
+          </div>
+
+          <h1 class="hero-name" id="hero-name">
+            Aspiring Software Developer<span class="accent-dot">.</span>
+          </h1>
+
+          <p class="hero-subtitle">
+            BS Information Technology student graduating July 2025 — passionate about building real-world solutions with <strong>Web</strong>, <strong>IoT</strong>, and <strong>AI</strong> technologies.
+          </p>
+
+          <div class="hero-actions">
+            <a href="#contact" class="btn-primary" id="hero-cta">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+                <polyline points="22,6 12,13 2,6"/>
+              </svg>
+              Get in Touch
+            </a>
+            <a href="#projects" class="btn-secondary" id="hero-projects-btn">
+              View Projects
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true">
+                <polyline points="9 18 15 12 9 6"/>
+              </svg>
+            </a>
+          </div>
+        </div>
+
+        <!-- Right: Status Badge -->
+        <div class="hero-status">
+          <div class="status-pill" id="status-pill">
+            <span class="status-dot" aria-hidden="true"></span>
+            Open to opportunities
+          </div>
+
+          <!-- Avatar -->
+          <div class="hero-avatar" id="hero-avatar">
+            <img id="avatar-img" src="me.png" alt="Jhay D. Peñaloza profile photo" style="display:block;" />
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== ABOUT ===================== -->
+  <section id="about" aria-label="About">
+    <div class="container">
+      <div class="section-header fade-in">
+        <h2 class="section-title">About</h2>
+      </div>
+
+      <div class="about-content fade-in">
+        <p class="about-text">
+          I'm Jhay D. Peñaloza, a graduating BS Information Technology student with hands-on experience in web development, IoT systems, and AI-powered applications. I enjoy turning complex problems into clean, practical solutions.
+        </p>
+        <p class="about-text">
+          Through academic and personal projects, I've worked with technologies like Laravel, ESP32 microcontrollers, Raspberry Pi, and the Gemini API. I'm always eager to learn, collaborate, and build meaningful software.
+        </p>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== SKILLS / TECH STACK ===================== -->
+  <section id="skills" aria-label="Skills">
+    <div class="container">
+      <div class="section-header fade-in">
+        <h2 class="section-title">Tech Stack</h2>
+      </div>
+
+      <div class="skills-grid fade-in" role="list" aria-label="Technical skills">
+        <span class="skill-tag" role="listitem">HTML</span>
+        <span class="skill-tag" role="listitem">CSS</span>
+        <span class="skill-tag" role="listitem">JavaScript</span>
+        <span class="skill-tag" role="listitem">GIT</span>
+        <span class="skill-tag" role="listitem">PHP</span>
+        <span class="skill-tag" role="listitem">Laravel</span>
+        <span class="skill-tag" role="listitem">MySQL</span>
+        <span class="skill-tag" role="listitem">Python</span>
+        <span class="skill-tag" role="listitem">C</span>
+        <span class="skill-tag" role="listitem">Flutter</span>
+        <span class="skill-tag" role="listitem">Arduino</span>
+        <span class="skill-tag" role="listitem">Raspberry Pi</span>
+        <span class="skill-tag" role="listitem">ESP32</span>
+        <span class="skill-tag" role="listitem">Gemini API</span>
+        <span class="skill-tag" role="listitem">IoT</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== EXPERIENCE ===================== -->
+  <section id="experience" aria-label="Experience">
+    <div class="container">
+      <div class="section-header fade-in">
+        <h2 class="section-title">Experience</h2>
+      </div>
+
+      <div class="experience-card fade-in">
+        <div class="exp-icon-wrap">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
+            <rect x="2" y="7" width="20" height="14" rx="2" ry="2"/>
+            <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/>
+          </svg>
+        </div>
+        <div class="exp-content">
+          <div class="exp-header">
+            <div>
+              <h3 class="exp-role">Technical Support (OJT)</h3>
+              <p class="exp-company">Mayor's Office</p>
+            </div>
+            <span class="exp-period">Jan 2026 – May 2026</span>
+          </div>
+          <ul class="exp-bullets">
+            <li>Encoded and processed incoming documents for the Mayor, ensuring records were accurate and properly filed.</li>
+            <li>Answered follow-up calls from document senders and coordinated document routing between departments.</li>
+            <li>Provided PC troubleshooting and printer maintenance support for office staff, minimizing downtime.</li>
+          </ul>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ===================== PROJECTS ===================== -->
+  <section id="projects" aria-label="Projects">
+    <div class="container">
+      <div class="section-header fade-in">
+        <h2 class="section-title">Recent Projects</h2>
+      </div>
+
+      <div class="projects-grid">
+
+        <!-- Project 1 -->
+        <article class="project-card fade-in" id="project-pest-control">
+          <div class="project-card-top">
+            <div class="project-emoji">🐀</div>
+            <h3 class="project-name">Arduino-Based Multimodal Pest & Insect Control</h3>
+            <p class="project-desc">
+              An IoT system integrating an ESP32 microcontroller with a Raspberry Pi 5 and camera module to remotely detect, monitor, and manage rodents and insects in real time.
+            </p>
+          </div>
+          <div class="project-card-bottom">
+            <div class="project-tech" aria-label="Technologies used">
+              <span class="tech-badge">ESP32</span>
+              <span class="tech-badge">Raspberry Pi 5</span>
+              <span class="tech-badge">C</span>
+              <span class="tech-badge">Python</span>
+              <span class="tech-badge">Flutter</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- Project 2 -->
+        <article class="project-card fade-in" id="project-calendar-ai">
+          <div class="project-card-top">
+            <div class="project-emoji">📅</div>
+            <h3 class="project-name">Calendar AI</h3>
+            <p class="project-desc">
+              A web application where users upload images containing schedules, holidays, meetings, class suspensions, and events — and the system automatically parses and adds them to Google Calendar using AI.
+            </p>
+          </div>
+          <div class="project-card-bottom">
+            <div class="project-tech" aria-label="Technologies used">
+              <span class="tech-badge">Python</span>
+              <span class="tech-badge">HTML</span>
+              <span class="tech-badge">CSS</span>
+              <span class="tech-badge">JavaScript</span>
+              <span class="tech-badge">Gemini API</span>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== CONTACT / BENTO GRID ===================== -->
+  <section id="contact" aria-label="Contact">
+    <div class="container">
+      <div class="section-header fade-in">
+        <h2 class="section-title">Let's Connect</h2>
+      </div>
+
+      <div class="bento-grid fade-in">
+
+        <!-- Email Card -->
+        <a href="mailto:penalozajhay14@gmail.com" class="bento-card bento-email" id="contact-email">
+          <div class="bento-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
+              <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+              <polyline points="22,6 12,13 2,6"/>
+            </svg>
+          </div>
+          <div class="bento-label">Email</div>
+          <div class="bento-value">penalozajhay14@gmail.com</div>
+          <div class="bento-arrow">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17l9.2-9.2M17 17V7.8H7.8"/></svg>
+          </div>
+        </a>
+
+        <!-- GitHub Card -->
+        <a href="https://github.com/Jhayyy14" target="_blank" rel="noopener noreferrer" class="bento-card bento-github" id="contact-github">
+          <div class="bento-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
+              <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/>
+            </svg>
+          </div>
+          <div class="bento-label">GitHub</div>
+          <div class="bento-value">Jhayyy14</div>
+          <div class="bento-arrow">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17l9.2-9.2M17 17V7.8H7.8"/></svg>
+          </div>
+        </a>
+
+        <!-- LinkedIn Card -->
+        <a href="https://www.linkedin.com/in/jhay-pe%C3%B1aloza-5240943b9" target="_blank" rel="noopener noreferrer" class="bento-card bento-linkedin" id="contact-linkedin">
+          <div class="bento-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
+              <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/>
+              <rect x="2" y="9" width="4" height="12"/>
+              <circle cx="4" cy="4" r="2"/>
+            </svg>
+          </div>
+          <div class="bento-label">LinkedIn</div>
+          <div class="bento-value">Jhay Peñaloza</div>
+          <div class="bento-arrow">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17l9.2-9.2M17 17V7.8H7.8"/></svg>
+          </div>
+        </a>
+
+
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== FOOTER ===================== -->
+  <footer id="footer">
+    <div class="container">
+      <p>&copy; 2025 Jhay D. Peñaloza. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
